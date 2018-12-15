@@ -4,10 +4,4 @@ mongoose.Promise = global.Promise;
 
 mongoose.connect( process.env.MONGODB_URI, {useNewUrlParser: true});
 
-// MongoDB connection only for localhost
-
-// mongoose.connect('mongodb://localhost:27017/TodoApp', {
-//   useNewUrlParser: true
-// });
-
 module.exports = {mongoose};
